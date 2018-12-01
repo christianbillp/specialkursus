@@ -69,5 +69,5 @@ s_per_run = total_runtime / n_runs
 s_per_classification = s_per_run / n_images
 classifications_per_second = 1 / s_per_run * n_images
 
-print("Inference took {} microseconds, {} usec per image".format(round(s_per_run*1000, 2), round(s_per_classification*1000, 2)))
+print("Inference took {} microseconds, {} usec per image".format(round(s_per_run*1000000, 2), round(s_per_classification*1000000, 2)))
 print("Classification rate: {} images per second".format(round(classifications_per_second, 2)))
